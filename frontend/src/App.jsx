@@ -13,12 +13,14 @@ function App() {
     <div className="min-h-screen flex flex-col bg-[#FDFBD4]">
 
       {/* HEADER (Logo Banner) */}
-      <header className="w-full py-4">
-        <img
-          src={logo}
-          alt="Virtual Teaching Assistant Logo"
-          className="w-full max-h-32 object-contain mx-auto"
-        />
+      <header className="w-full py-4 bg-[#FDFBD4]">
+        <div className="max-w-5xl mx-auto px-4">
+          <img
+            src={logo}
+            alt="Virtual Teaching Assistant Logo"
+            className="w-full max-h-32 object-contain"
+          />
+        </div>
       </header>
 
       {/* HERO SECTION */}
