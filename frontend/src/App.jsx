@@ -18,7 +18,7 @@ function App() {
           <img
             src={logo}
             alt="Virtual Teaching Assistant Logo"
-            className="w-full max-h-32 object-contain"
+            className="h-24 object-contain mx-auto"
           />
         </div>
       </header>
