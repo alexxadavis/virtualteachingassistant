@@ -12,25 +12,25 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* HERO SECTION */}
-      <section className="flex-1 flex items-center justify-center text-center px-6 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+      <section className="flex-1 flex items-center justify-center text-center px-6 bg-[#FDFBD4]">
         <div className="max-w-3xl">
           <img src={heroImg} alt="Hero" className="mx-auto w-40 mb-6" />
 
-          <h1 className="text-5xl font-bold text-gray-800">
+          <h1 className="text-5xl font-bold text-[#9DC183]">
             Welcome to Virtual Teaching Assistant
           </h1>
 
-          <p className="mt-6 text-lg text-gray-600">
+          <p className="mt-6 text-lg text-[#7FA96B]">
             Your AI-powered learning companion designed to help you study smarter,
             understand faster, and stay organized.
           </p>
 
           <div className="mt-8 flex gap-4 justify-center">
-            <button className="px-6 py-3 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition">
+            <button className="px-6 py-3 rounded-xl bg-[#9DC183] text-white font-medium hover:opacity-90 transition">
               Get Started
             </button>
 
-            <button className="px-6 py-3 rounded-xl border border-gray-300 text-gray-700 hover:bg-gray-100 transition">
+            <button className="px-6 py-3 rounded-xl border border-[#9DC183] text-[#9DC183] hover:bg-[#F0F7E8] transition">
               Learn More
             </button>
           </div>
