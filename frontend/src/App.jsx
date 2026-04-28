@@ -10,11 +10,20 @@ function App() {
   }, [])
 
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* LOGO SECTION */}
-      <section className="flex-1 flex items-center justify-center text-center px-6 bg-[#FDFBD4]">
-        <div className="max-w-3xl">
-          <img src={logo} alt="Hero" className="mx-auto w-40 mb-6" />
+    <div className="min-h-screen flex flex-col bg-[#FDFBD4]">
+
+      {/* HEADER (Logo Banner) */}
+      <header className="w-full py-4">
+        <img
+          src={logo}
+          alt="Virtual Teaching Assistant Logo"
+          className="w-full max-h-32 object-contain mx-auto"
+        />
+      </header>
+
+      {/* HERO SECTION */}
+      <section className="text-center px-6 py-16">
+        <div className="max-w-3xl mx-auto">
 
           <h1 className="text-5xl font-bold text-[#9DC183]">
             Welcome to Virtual Teaching Assistant
@@ -35,7 +44,7 @@ function App() {
             </button>
           </div>
 
-          {/* optional counter kept for dev/testing */}
+          {/* optional counter */}
           <div className="mt-10">
             <button
               className="text-sm text-gray-500 underline"
@@ -44,13 +53,15 @@ function App() {
               Dev Counter: {count}
             </button>
           </div>
+
         </div>
       </section>
 
       {/* FOOTER */}
-      <footer className="py-6 text-center text-sm text-gray-400">
+      <footer className="py-6 text-center text-sm text-gray-400 mt-auto">
         Built for students, educators, and lifelong learners.
       </footer>
+
     </div>
   )
 }
