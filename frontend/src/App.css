@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  background-color: #FDFBD4;
+  color: #9DC183;
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
