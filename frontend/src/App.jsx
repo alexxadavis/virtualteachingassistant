@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import logo from './assets/virtualteachingassistant.png'
+import logo from './assets/virtualteachingassistantlogo.png'
 import './App.css'
 
 function App() {
