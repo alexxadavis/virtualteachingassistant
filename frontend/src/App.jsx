@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import heroImg from './assets/hero.png'
+import logo from './assets/virtualteachingassistant.png'
 import './App.css'
 
 function App() {
@@ -11,10 +11,10 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {/* HERO SECTION */}
+      {/* LOGO SECTION */}
       <section className="flex-1 flex items-center justify-center text-center px-6 bg-[#FDFBD4]">
         <div className="max-w-3xl">
-          <img src={heroImg} alt="Hero" className="mx-auto w-40 mb-6" />
+          <img src={logo} alt="Hero" className="mx-auto w-40 mb-6" />
 
           <h1 className="text-5xl font-bold text-[#9DC183]">
             Welcome to Virtual Teaching Assistant
