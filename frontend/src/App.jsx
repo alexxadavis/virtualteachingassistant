@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
       {/* HERO SECTION */}
       <section className="flex-1 flex items-center justify-center text-center px-6 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
         <div className="max-w-3xl">
-          <img src={heroImg} alt="Hero" className="mx-auto w-40 mb-6" />
 
           <h1 className="text-5xl font-bold text-gray-800">
             Welcome to Virtual Teaching Assistant
