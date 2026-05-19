@@ -1,56 +1,96 @@
-import { useState, useEffect } from 'react'
-import './App.css'
+// src/App.jsx
 
-function App() {
-  const [count, setCount] = useState(0)
+import { useEffect } from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import "./index.css";
 
-  useEffect(() => {
-    document.title = "Virtual Teaching Assistant"
-  }, [])
-
+function HomePage() {
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* HERO SECTION */}
-      <section className="flex-1 flex items-center justify-center text-center px-6 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
-        <div className="max-w-3xl">
+    <div className="hero">
+      <div className="hero-content">
+        <h1 className="hero-title">
+          Welcome to Moola Master!
+        </h1>
 
-          <h1 className="text-5xl font-bold">
-            Welcome to Virtual Teaching Assistant
-          </h1>
+        <p className="hero-subtitle">
+          Learn budgeting, saving, investing, and financial literacy through
+          interactive tools and guided learning experiences.
+        </p>
 
-          <p className="mt-6 text-lg text-gray-600">
-            Your AI-powered learning companion designed to help you study smarter,
-            understand faster, and stay organized.
-          </p>
+        <div className="hero-buttons">
+          <button className="primary-btn">
+            Get Started
+          </button>
 
-          <div className="mt-8 flex gap-4 justify-center">
-            <button className="px-6 py-3 rounded-xl border border-gray-300 text-gray-700 hover:bg-gray-100 transition">
-              Learn More
-            </button>
-            
-            <button className="px-6 py-3 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition">
-              Get Started
-            </button>
-          </div>
-
-          {/* optional counter kept for dev/testing */}
-          <div className="mt-10">
-            <button
-              className="text-sm text-gray-500 underline"
-              onClick={() => setCount((c) => c + 1)}
-            >
-              Dev Counter: {count}
-            </button>
-          </div>
+          <button className="secondary-btn">
+            Learn More
+          </button>
         </div>
-      </section>
-
-      {/* FOOTER */}
-      <footer className="py-6 text-center text-sm text-gray-400">
-        Built for students, educators, and lifelong learners.
-      </footer>
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default function App() {
+  useEffect(() => {
+    document.title = "Moola Master";
+  }, []);
+
+  return (
+    <div className="layout">
+      {/* HEADER */}
+      <header className="header">
+        <div className="left-container">
+          <img
+            src="/images/moola_logo.png"
+            alt="Moola Master Logo"
+            className="logo"
+          />
+
+          <Link to="/" className="brand">
+            Moola Master
+          </Link>
+        </div>
+
+        <div className="right-container">
+          <Link to="/" className="nav-link">
+            Home
+          </Link>
+
+          <Link to="/courses" className="nav-link">
+            Courses
+          </Link>
+
+          <Link to="/budget-tools" className="nav-link">
+            Budget Tools
+          </Link>
+
+          <Link to="/investing" className="nav-link">
+            Investing
+          </Link>
+
+          <button className="login-btn">
+            Login / Sign Up
+          </button>
+        </div>
+      </header>
+
+      {/* MAIN CONTENT */}
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+
+          {/* Placeholder Routes */}
+          <Route path="/courses" element={<div />} />
+          <Route path="/budget-tools" element={<div />} />
+          <Route path="/investing" element={<div />} />
+        </Routes>
+      </main>
+
+      {/* FOOTER */}
+      <footer className="footer">
+        Established in 2026 to help people master their moola!
+      </footer>
+    </div>
+  );
+}
