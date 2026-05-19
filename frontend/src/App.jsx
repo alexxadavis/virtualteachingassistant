@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import "./index.css";
+import Signup from "./components/Signup";
 
 function HomePage() {
   return (
@@ -69,9 +70,9 @@ export default function App() {
             Investing
           </Link>
 
-          <button className="login-btn">
+          <Link to="/signup" className="login-btn">
             Login / Sign Up
-          </button>
+          </Link>
         </div>
       </header>
 
@@ -84,6 +85,8 @@ export default function App() {
           <Route path="/courses" element={<div />} />
           <Route path="/budget-tools" element={<div />} />
           <Route path="/investing" element={<div />} />
+
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </main>
 
