@@ -188,3 +188,69 @@ body {
     border-right-color: var(--border);
   }
 }
+
+/*===============================
+COURSES FORMATTING CONTAINER
+=================================*/
+
+.courses-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.courses-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #9DC183;
+}
+
+.courses-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.course-item {
+  background-color: #f4f4f4;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+/*===============================
+BUDGET TOOLS FORMATTING
+=================================*/
+
+.budget-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.budget-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #9DC183;
+}
+
+.budget-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.budget-item {
+  background-color: #f4f4f4;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}

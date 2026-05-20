@@ -1,9 +1,10 @@
 // src/App.jsx
-
 import { useEffect } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import "./index.css";
 import Signup from "./components/Signup";
+import Courses from './components/Courses'
+import BudgetTools from './components/BudgetTools'
 
 function HomePage() {
   return (
@@ -82,8 +83,8 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
 
           {/* Placeholder Routes */}
-          <Route path="/courses" element={<div />} />
-          <Route path="/budget-tools" element={<div />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/budget-tools" element={<BudgetTools />} />
           <Route path="/investing" element={<div />} />
 
           <Route path="/signup" element={<Signup />} />
