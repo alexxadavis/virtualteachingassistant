@@ -9,7 +9,7 @@ export default function Courses() {
 
   return (
     <div className="courses-container">
-      <h2>Available Courses</h2>
+      <h1>Available Courses</h1>
 
       <ul className="courses-list">
         {courses.map((course, index) => (
