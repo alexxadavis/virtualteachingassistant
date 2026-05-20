@@ -78,15 +78,12 @@ export default function App() {
       </header>
 
       {/* MAIN CONTENT */}
-      <main>
+      <main className="main-content">
         <Routes>
           <Route path="/" element={<HomePage />} />
-
-          {/* Placeholder Routes */}
           <Route path="/courses" element={<Courses />} />
           <Route path="/budget-tools" element={<BudgetTools />} />
           <Route path="/investing" element={<div />} />
-
           <Route path="/signup" element={<Signup />} />
         </Routes>
       </main>

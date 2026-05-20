@@ -254,3 +254,26 @@ BUDGET TOOLS FORMATTING
   border-radius: 8px;
   font-size: 1.1rem;
 }
+
+html, body, #root {
+  height: 100%;
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* This makes the main content expand */
+.main-content {
+  flex: 1;
+}
+
+/* Footer styling (optional improvement) */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+  margin-top: auto;
+}
